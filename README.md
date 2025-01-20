@@ -11,3 +11,6 @@ Create a simple paint program that draws on the screen when you drag with your m
 - **Transparency:** Using the 'alpha' value, a slider that adjusts the 'transparency' of the paint is added. 
 - **Lines:** A diagnoal line is added to the options for the shape. You can adjust the length of the line. It creates a cool geometric shape when you drag with the mouse.
 - **Change background color:** You can apply the current color to the background. This won't clear the canvas, so the drawings will stay.
+
+### Who is Roy?
+He is my new family member.
