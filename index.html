@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <br>
+    <button type="button" id="clearButton">Clear Canvas</button>
+    <br><br>
+    <b>Sample Drawing:</b><br>
+    <button type="button" id="drawRoy">Draw Roy!</button>
+    <a href="https://i.imgur.com/6cjAPTR.png" target="_Blank">
+      <button type="button" id="showImage">Show me the image!</button>
+    </a>
+    
+    <br><br>
+    <b>Drawing Mode:</b><br>
+    <button type="button" id="sqButton">Squares</button>
+    <button type="button" id="triButton">Triangles</button>
+    <button type="button" id="cirButton">Circles</button>
+    <button type="button" id="lineButton">Lines</button>
+    <p>
+    <span style="color:grey">(Circle)</span> Segment Count: <input type="range" min="8" max="40" value="10" class="slider" id="segSlide">
+    <p>
+    Line length: <input type="range" min="10" max="80" value="30" class="slider" id="lineLength">
+
+    <p>
+    <b>Shape Color:</b><br> 
+    Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide">
+    Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlide">
+    Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueSlide">
+    <br>
+    Transparency: <input type="range" min="0" max="100" value="100" class="slider" id="transparency">
+    <br>
+    <button type="button" id="changeBgColor">Apply this color to background</button>
+
+
+    <br>
+    <p>
+    <b>Shape Size:</b>
+    <input type="range" min="5" max="40" value="10" class="slider" id="sizeSlide">
+      
+
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="ColoredPoints.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+      <script src="Line.js"></script>
+  </body>
+</html>
